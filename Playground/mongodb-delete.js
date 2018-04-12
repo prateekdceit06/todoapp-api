@@ -39,6 +39,6 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, db) =>{
     db.collection('Todos').deleteMany({test: "Eat lunch"}).then((result)=>{
         console.log(result);
     });
-
+ 
     db.close();
 });
